@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  /* Typography variables */
+  --title-font-size: 2rem;
+  --title-font-size-lg: 2.5rem;
+  --sub-title-font-size: 1.5rem;
+  --sub-title-font-size-lg: 2rem;
+  --para-font-size: 1rem;
+  --para-font-size-lg: 1.125rem;
+  --font-family: 'Arial', sans-serif;
+
+  /* Color variables */
+  --primary-color: #1E3A8A;
+  /* Dark blue */
+  --secondary-color: #3B82F6;
+  /* Light blue */
+  --text-color: #333333;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+}
+
+.header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.title {
+  font-size: var(--title-font-size);
+  margin-bottom: 0.5rem;
+}
+
+.sub-title {
+  font-size: var(--sub-title-font-size);
+}
+
+.section-title {
+  font-size: var(--title-font-size);
+  color: var(--primary-color);
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.para {
+  font-size: var(--para-font-size);
+  line-height: 1.6;
+}
+
+section {
+  padding: 2rem 1rem !important;
+  margin: 1rem auto;
+
+}
+
+/* Responsive styles */
+
+
+@media (min-width: 768px) {
+  .title {
+    font-size: var(--title-font-size-lg);
+  }
+
+  .sub-title {
+    font-size: var(--sub-title-font-size-lg);
+  }
+
+  .para {
+    font-size: var(--para-font-size-lg);
+  }
+
+  section {
+    padding: 3rem 6rem !important;
+    margin: 3rem auto !important;
+
+  }
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  section {
+    padding: 1.5rem 3rem !important;
+    margin: 1.5rem auto;
+  }
+}
